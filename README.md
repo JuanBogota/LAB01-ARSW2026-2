@@ -41,6 +41,15 @@
 
 	La salida con el método run() es más "organizada" ya que hace las asignaciones de forma secuencial, en cambio el método start() crea los hilos y corre todo de forma paralela, por eso se ve mas "desordenado". Esto dado que al momento de hacer run() es como ejecutar un método normal, en cada llamada de start() se crea el hilo y se ejecuta run() por debajo.
 
+
+	**Cambio hecho por el profe en clase de la parte I**
+
+	![](img/image-6.png)
+	
+	![](img/image-7.png)
+
+	Este es el cambio que pidió el profe en clase, hicimos la prueba con un rango de [0,10] y 3 hilos. El inicio del rango es el atributo min y el final es el atributo max.
+
 **Parte II - Ejercicio Black List Search**
 
 
