@@ -1,2 +1,3 @@
 # LAB01-ARSW2026-2
 Laboratorio 1 | ARSW 2026-2
+Carlos Duban Rojas y Juan Daniel Bogotá
