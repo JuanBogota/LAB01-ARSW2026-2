@@ -1,13 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package edu.eci.arsw.threads;
 
 /**
- *
- * @author hcadavid
+ * The CountThreadsMain class is the main entry point for the program that creates and starts multiple 
+ * CountThread instances to count from a specified minimum to a maximum value.
+ * min and max define the range of numbers to be counted, and numThreads specifies how many threads will be created to perform the counting.
+ * @author Carlos Rojas
+ * @author Juan Bogota
  */
 public class CountThreadsMain {
     
