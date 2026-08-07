@@ -30,6 +30,9 @@ public class HostBlackListsValidator {
      * NOT Trustworthy, and the list of the five blacklists returned.
      * @param ipaddress suspicious host's IP address.
      * @return  Blacklists numbers where the given host's IP address was found.
+     * 
+     * @author Juan Daniel Bogotá
+     * @author Carlos Rojas
      */
     public List<Integer> checkHost(String ipaddress, int n){
         

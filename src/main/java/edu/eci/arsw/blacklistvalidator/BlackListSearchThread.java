@@ -5,8 +5,23 @@ import java.util.List;
 import edu.eci.arsw.spamkeywordsdatasource.HostBlacklistsDataSourceFacade;
 
 /**
+ * A worker thread responsible for searching a single segment of the
+ * registered black list servers for a given host IP address.
+ * 
+ * This class is the core building block used to parallelize
+ * {@link HostBlackListsValidator#checkHost}: instead of scanning every
+ * black list sequentially, the total search space is split into N
+ * segments, and one {@code BlackListSearchThread} is assigned to each
+ * segment, all of them searching concurrently.
+ * 
+ * Each thread operates over the half-open interval {@code [startIndex, endIndex)}
+ * and reports its own results ({@link #getOccurrences()} and
+ * {@link #getCheckedCount()}) once it has finished running, so the caller
+ * can aggregate them after joining all threads.
  *
- * @author juanb
+ * @author Juan Daniel Bogotá
+ * @author Carlos Rojas
+ * @version 1.0
  */
 public class BlackListSearchThread extends Thread{
 

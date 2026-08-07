@@ -8,8 +8,9 @@ package edu.eci.arsw.blacklistvalidator;
 import java.util.List;
 
 /**
- *
- * @author hcadavid
+ * The main class for the blacklist validator application.
+ * @author Juan Daniel Bogotá
+ * @author Carlos Rojas
  */
 public class Main {
     
